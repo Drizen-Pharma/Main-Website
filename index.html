@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drizen Pharmaceuticals LLP - Rooted In Science. Committed to Care</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to enhance the pharmaceutical look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        .header-bg {
+            background-color: #0056b3; /* Primary Blue for Professionalism */
+        }
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .composition-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        .composition-list li:before {
+            content: '💊'; /* Tablet/Capsule icon */
+            position: absolute;
+            left: 0;
+            color: #0056b3;
+        }
+        .btn-primary {
+            background-color: #0056b3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #003d7a;
+        }
+        /* Style for the logo placeholder to ensure it looks sharp */
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.75rem;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header class="header-bg shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <span class="logo-text">DRIZEN PHARMA LLP</span>
+                    <p class="text-xs text-white opacity-75">Rooted In Science. Committed to Care</p>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-gray-300 transition duration-300">Home</a>
+                    <a href="#products" class="text-white hover:text-gray-300 transition duration-300">Our Products</a>
+                    <a href="#contact" class="text-white hover:text-gray-300 transition duration-300">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+            <a href="#home" class="block py-2 px-4 text-white hover:bg-gray-700 transition duration-300">Home</a>
+            <a href="#products" class="block py-2 px-4 text-white hover:bg-gray-700 transition duration-300">Our Products</a>
+            <a href="#contact" class="block py-2 px-4 text-white hover:bg-gray-700 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="py-12">
+
+        <!-- Hero Section -->
+        <section id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div class="text-center py-16 bg-white rounded-xl shadow-lg border-t-4 border-blue-500">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Pioneering Excellence in Pharmaceutical Solutions</h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Focused on specialized segments, we deliver innovative, science-backed medicines, particularly in **Neuro-Psychiatry and Wellness**.</p>
+                <a href="#products" class="btn-primary text-white font-semibold py-3 px-8 rounded-lg inline-block shadow-md">Explore Our Products</a>
+            </div>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center border-b-2 pb-2 border-blue-500">Our Specialized Product Line</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product Card 1: Zencor-P -->
+                <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">Zencor-P <span class="text-base text-gray-500 block">(10's Blister Tab)</span></h3>
+                    <p class="text-sm text-gray-600 mb-4 font-semibold">Dosage Form: Tablet | Focus: Neuro-Pain & Inflammation</p>
+                    <hr class="mb-4">
+                    <ul class="composition-list">
+                        <li>Palmitoylethanolamide (PEA), 400 mg</li>
+                        <li>Curcumin (BCM-95®), 500 mg</li>
+                        <li>Methylcobalamin, 1500 mcg</li>
+                        <li>Alpha Lipoic Acid, 100 mg</li>
+                        <li>Benfotiamine, 100 mg</li>
+                        <li>Vitamin D3, 1000 IU</li>
+                    </ul>
+                    <a href="#contact" class="mt-4 btn-primary text-white text-sm font-medium py-2 px-4 rounded-lg inline-block">Inquire for Distribution</a>
+                </div>
+
+                <!-- Product Card 2: MeloZen Plus -->
+                <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">MeloZen Plus <span class="text-base text-gray-500 block">(10's MDT Strip)</span></h3>
+                    <p class="text-sm text-gray-600 mb-4 font-semibold">Dosage Form: Mouth Dissolving Tablet | Focus: Sleep & Anxiety</p>
+                    <hr class="mb-4">
+                    <ul class="composition-list">
+                        <li>L-Theanine, 200 mg</li>
+                        <li>5-HTP (Griffonia Extract), 50 mg</li>
+                        <li>Melatonin, 3 mg</li>
+                    </ul>
+                    <a href="#contact" class="mt-4 btn-primary text-white text-sm font-medium py-2 px-4 rounded-lg inline-block">Inquire for Distribution</a>
+                </div>
+
+                <!-- Product Card 3: BrainoZen Syrup -->
+                <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">BrainoZen Syrup <span class="text-base text-gray-500 block">(150 ml PET Bottle)</span></h3>
+                    <p class="text-sm text-gray-600 mb-4 font-semibold">Dosage Form: Syrup (Mango Flavour) | Focus: Child Neuro & Cognitive Health</p>
+                    <hr class="mb-4">
+                    <ul class="composition-list">
+                        <li>Omega-3 Fatty Acids, 613 mg</li>
+                        <li>L-Carnosine, 200 mg</li>
+                        <li>DHA (Docosahexaenoic Acid), 125 mg</li>
+                        <li>Coenzyme Q10 (Ubiquinone), 50 mg</li>
+                        <li>Saffron Extract, 5 mg</li>
+                    </ul>
+                    <a href="#contact" class="mt-4 btn-primary text-white text-sm font-medium py-2 px-4 rounded-lg inline-block">Inquire for Distribution</a>
+                </div>
+
+                <!-- Product Card 4: DRIQ Softgel Cap -->
+                <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">DRIQ Softgel Cap <span class="text-base text-gray-500 block">(10's Blister Cap)</span></h3>
+                    <p class="text-sm text-gray-600 mb-4 font-semibold">Dosage Form: Softgel Capsule | Focus: Active CoQ10 & Omega Fatty Acids</p>
+                    <hr class="mb-4">
+                    <ul class="composition-list">
+                        <li>Ubiquinol (Active CoQ10), 150 mg</li>
+                        <li>EPA/DHA, 518 mg</li>
+                        <li>Astaxanthin, 12 mg</li>
+                        <li>L-Carnosine, 100 mg</li>
+                    </ul>
+                    <a href="#contact" class="mt-4 btn-primary text-white text-sm font-medium py-2 px-4 rounded-lg inline-block">Inquire for Distribution</a>
+                </div>
+                
+                <!-- Product Card 5: VIRAMAX Cap -->
+                <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">VIRAMAX Cap <span class="text-base text-gray-500 block">(10's Capsule Strip)</span></h3>
+                    <p class="text-sm text-gray-600 mb-4 font-semibold">Dosage Form: Capsule | Focus: Male Wellness & Vitality</p>
+                    <hr class="mb-4">
+                    <ul class="composition-list">
+                        <li>L-Citrulline, 1000 mg</li>
+                        <li>L-Arginine, 500 mg</li>
+                        <li>Maca Root Extract, 200 mg</li>
+                        <li>Testofen® (Fenugreek Extract), 100 mg</li>
+                    </ul>
+                    <a href="#contact" class="mt-4 btn-primary text-white text-sm font-medium py-2 px-4 rounded-lg inline-block">Inquire for Distribution</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Contact Section -->
+    <footer id="contact" class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-700 pb-8 mb-8">
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-3 text-blue-300">DRIZEN PHARMACEUTICALS LLP</h4>
+                    <p class="text-sm text-gray-400">LLPIN: ACR-1888</p>
+                    <p class="text-sm text-gray-400">Incorporated on: Sep 09, 2025</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold mb-3 text-blue-300">Contact Details</h4>
+                    <p class="text-sm mb-2">
+                        <span class="font-medium text-white">Email:</span>
+                        <a href="mailto:info@drizenpharma.com" class="text-blue-400 hover:text-blue-300 transition duration-300">info@drizenpharma.com</a>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-medium text-white">Phone:</span>
+                        +91 9106430439 / +9925297013
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold mb-3 text-blue-300">Registered Address</h4>
+                    <p class="text-sm text-gray-400">Shop 302 TF Gruham Empire,</p>
+                    <p class="text-sm text-gray-400">Near Sahajanand Embro, Kosad,</p>
+                    <p class="text-sm text-gray-400">Amroli Police Station, Surat, Chorayasi,</p>
+                    <p class="text-sm text-gray-400">Gujarat, India, Pin: 394107</p>
+                </div>
+
+            </div>
+            
+            <div class="text-center text-sm text-gray-500">
+                &copy; 2025 Drizen Pharmaceuticals LLP. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Simple scroll smoothing for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking
+                var menu = document.getElementById('mobile-menu');
+                if (!menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
